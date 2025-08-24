@@ -1,0 +1,150 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson - Aspiring Solutions Architect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- change text here -->
+        <div class="brand">George.</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- change text here -->
+                <h1>Hello<br>I'm George</h1>
+                <p>I design solutions instinctively. I see how systems can be architected efficiently. I do not follow certain rigid methodologies, but adapt to the needs of the project.</p>
+                <a href="cv.html" class="btn">Download CV</a>
+                <a href="#contact" class="btn">Contact Me</a>
+                <!-- <p>hello@jackson.com</p> -->
+      </p>
+            </div>
+            <!-- change image here (naming, extension, and alt) -->
+            <img src="images/about-pic.webp" alt="George" class="user-image">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="intro">Passionate Solutions Architect with expertise in cloud infrastructure, security, and DevOps practices. I transform complex business requirements into scalable, efficient technical solutions.</p>
+                    <p>With a focus on AWS cloud services, I design and implement robust architectures that drive business growth while maintaining security and cost-effectiveness.</p>
+                </div>
+                <div class="skills-achievements">
+                    <div class="skills">
+                        <h3>Core Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Security</span>
+                        </div>
+                    </div>
+                    <div class="achievements">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>AWS Solutions Architect Certified</li>
+                            <li>Reduced infrastructure costs by 40%</li>
+                            <li>Led 15+ successful cloud migrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="cloud">Cloud</button>
+            <button class="filter-btn" data-filter="security">Security</button>
+            <button class="filter-btn" data-filter="devops">DevOps</button>
+            <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        </div>
+        <div class="project-grid">
+            <div class="project-item" data-category="cloud">
+                <img src="images/placeholder-cloud.jpg" alt="Cloud Project" class="project-image">
+                <h4 class="project-category">Cloud</h4>
+                <p>AWS serverless architecture with Lambda and DynamoDB for scalable web applications.</p>
+                <button class="demo-btn">Demo</button>
+            </div>
+            <div class="project-item" data-category="security">
+                <img src="images/placeholder-security.jpg" alt="Security Project" class="project-image">
+                <h4 class="project-category">Security</h4>
+                <p>Multi-factor authentication system with encryption and secure access controls.</p>
+                <button class="demo-btn">Demo</button>
+            </div>
+            <div class="project-item" data-category="devops">
+                <img src="images/placeholder-devops.jpg" alt="DevOps Project" class="project-image">
+                <h4 class="project-category">DevOps</h4>
+                <p>CI/CD pipeline automation using Jenkins and Docker containerization.</p>
+                <button class="demo-btn">Demo</button>
+            </div>
+            <div class="project-item" data-category="infrastructure">
+                <img src="images/placeholder-infrastructure.jpg" alt="Infrastructure Project" class="project-image">
+                <h4 class="project-category">Infrastructure</h4>
+                <p>Terraform-based infrastructure as code for AWS cloud deployment.</p>
+                <button class="demo-btn">Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to discuss your next project? I'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>george@solutions.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
