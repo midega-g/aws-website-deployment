@@ -12,12 +12,12 @@ variable "default_tags" {
   }
 }
 
-# variable "notification_email" {
-#   type        = string
-#   description = "Email address to receive contact form notifications"
-# }
+variable "notification_email" {
+  type        = string
+  description = "Email address to receive contact form notifications"
+}
 
-# variable "website_url" {
-#   type        = string
-#   description = "Website URL for CORS configuration"
-# }
+variable "website_url" {
+  type        = string
+  description = "Website URL for CORS configuration"
+}
